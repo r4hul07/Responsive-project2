@@ -98,7 +98,7 @@ main .center .center-in .right .elem:hover a {
 
 .bottom {
   height: 33%;
-  background: url("image.jpg");
+  background: url("assets/image.jpg");
   background-size: cover;
   background-position: 0 7%;
 }
