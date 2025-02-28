@@ -1,199 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+body,
+html {
+  height: 100%;
+  width: 100%;
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    font-family: "Lexend Exa", sans-serif;
+main {
+  height: 100%;
+  width: 100%;
 }
 
-main nav{
+main nav {
+  font-family: "Lexend Deca", serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  height: 7%;
+  padding: 0 30px;
+  width: 100%;
+}
+
+main nav h2 {
+  font-weight: 600;
+  font-size: 1.6vw;
+}
+
+main nav i {
+  border-radius: 50%;
+  background-color: black;
+  font-size: 1.1vw;
+  color: white;
+  padding: 8px;
+}
+
+main .center {
+  padding: 20px 60px;
+}
+
+main .center h1 {
+  font-family: "Lexend Deca", serif;
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 4.55vw;
+}
+
+main .center .center-in {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .center .center-in p {
+  font-family: "Lexend Deca", serif;
+  font-size: 1.15vw;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+main .center .center-in .right {
+  width: 20%;
+}
+
+main .center .center-in .right .elem {
+  padding: 8px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .center .center-in .right .elem a {
+  font-family: "Lexend Deca", serif;
+  font-size: 1.3vw;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+
+main .center .center-in .right .elem i {
+  font-size: 1.4vw;
+  opacity: 0;
+}
+
+main .center .center-in .right .elem:hover i {
+  opacity: 1;
+}
+
+main .center .center-in .right .elem:hover a {
+  text-decoration: underline;
+}
+
+.bottom {
+  height: 33%;
+  background: url("image.jpg");
+  background-size: cover;
+  background-position: 0 7%;
+}
+
+@media (max-width: 600px) {
+  main nav{
+    gap: 20px;
+    height: 7%;
+    padding: 0 10px;
+  }
+
+  main nav h2 {
     font-weight: 500;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 30px;
-}
+    font-size: 4vw;
+  }
+  
+  main nav i {
+    font-size: 4vw;
+  }
 
-main nav ul{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    font-size: 1.2vw;
-}
-
-main nav ul li i{
-    font-size: 1vw;
-    border: 2px solid black;
-    color: black;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-main .center{
-    text-transform: capitalize;
-    padding: 25px 60px;
-}
-
-main .center h1{
-    font-size: 3.5vw;
+  main .center {
+    padding: 20px 20px;
+  }
+  
+  main .center h1 {
+    font-size: 7vw;
+    line-height: 9vw;
+  }
+  
+  main .center .center-in {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  
+  main .center .center-in p {
+    font-size: 3vw;
     line-height: 4.5vw;
-    font-weight: 350;
-}
-
-main .center .center-in{
-    display: flex;
-    margin-top: 3vh;
-    justify-content: space-between;
-}
-
-main .center .center-in p{
-    font-size: 1vw;
-    line-height: 2vw;
-    font-weight: 500;
-    width: 30%;
-    text-align: justify;
-}
-
-main .center .center-in .right{
-    width: 25%;
-}
-
-main .center .center-in .right .elem{
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid black;
-    padding: 15px 0;
-
-}
-
-main .center .center-in .right .elem a{
+  }
+  
+  main .center .center-in .right {
+    width: 100%;
+    margin-top: 38px;
+  }
+  
+  main .center .center-in .right .elem {
+    padding: 8px;
+    border-top: 1.5px solid black;
+    flex-direction: row-reverse;
+  }
+  
+  main .center .center-in .right .elem a {
+    font-size: 4vw;
+    font-weight: 300;
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-}
-
-main .center .center-in .right .elem i{
-    font-size: 1.2em;
-    opacity: 0;
-}
-
-
-main .center .center-in .right .elem:hover i{
+  }
+  
+  main .center .center-in .right .elem i {
+    font-size: 5vw;
     opacity: 1;
+    rotate: 45deg;
+  }
+
+  
+  .bottom {
+    height: 38%;
+  }
+  
 }
-
-main .center .center-in .right .elem:hover a{
-    text-decoration: underline;
-}
-
-main .bottom{
-    height: 60%;
-    width: 100%;
-    background-image: url(assets/model.jpg);
-    background-size: cover;
-    background-position: 0 15%;
-}
-
-
-
-
-@media (max-width:600px){
-
-    main nav{
-        font-weight: 500;
-        height: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0 15px;
-    }
-
-    main nav ul{
-        display: flex;
-        list-style: none;
-        gap: 15px;
-        font-size: 3.5vw;
-    }
-    
-    main nav ul li i{
-        font-size: 3.5vw;
-        border: 1px solid black;
-        color: black;
-        padding: 8px;
-        border-radius: 50%;
-    }
-
-    main .center{
-        text-transform: capitalize;
-        padding: 0 15px;
-    }
-    
-    main .center h1{
-        font-size: 8vw;
-        line-height: 12vw;
-        font-weight: 350;
-    }
-
-    main .center .center-in{
-        display: flex;
-        flex-direction: column;
-        margin-top: 4vh;
-        justify-content: space-between;
-    }
-
-    main .center .center-in p{
-        width: 80%;
-        font-size: 2.7vw;
-        line-height: 4vw;
-        font-weight: 600;
-        text-align: left;
-    }
-    
-    main .center .center-in .right{
-        margin-top: 3vh;
-        width: 100%;
-    }
-    
-    main .center .center-in .right .elem{
-        display: flex;
-        justify-content: space-between;
-        border-top: 1px solid rgb(50, 48, 48);
-        padding: 8px 0;
-    
-    }
-    
-    main .center .center-in .right .elem a{
-        text-decoration: none;
-        color: black;
-        font-size: 4vw;
-    }
-    
-    main .center .center-in .right .elem i{
-        font-size: 1.2em;
-        opacity: 1;
-    }
-    
-    main .bottom{
-        margin-top: 10px;
-        height: 35%;
-        width: 100%;
-        background-image: url(assets/model.jpg);
-        background-size: cover;
-        background-position: 0 15%;
-    }
-    
-}
-
